@@ -1,0 +1,23 @@
+1.api stands for application programming interface
+2.api is a communication medium among two or more entities like frontend-backend,mobile-bakend,backend-backend
+3.commication is done in json language
+4.json stands for java script object notation.It is the way to represent  an object 
+=>JSON looks like dictionary pf python ,object of javascript
+
+{
+    "name":"jon",
+    "email":"jon@gmail.com",
+    "age":25
+}
+
+5.There are two type of api:
+=>rest api
+=>soap api
+
+soap api use XML  as communication language
+<name>jon</name>
+<age>24</age>
+<address>ktm</address>
+
+
+

@@ -1,0 +1,11 @@
+2xx = success
+=>200 =get request success
+=>201 =successfully created
+=>204 =>successfully deleted
+
+3xx = redirection
+=>301 # permanent redirection
+=>302 # temporary redirection
+
+
+#4xx

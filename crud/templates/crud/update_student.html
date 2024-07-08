@@ -1,0 +1,51 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}
+update Student
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Update Student</h1><br>
+
+    <form method="post" class="form form-group">
+        {% csrf_token %}
+        <div>
+            <label>Name</label>
+            <input required class="form-control" type="text" name="student_name" style="width: 50%;">
+        </div>
+        <div>
+            <label>Age</label>
+            <input required class="form-control" type="text" style="width: 50%;" name="age">
+        </div><br>
+        <div>
+            <label>Email</label>
+            <input required class="form-control" type="text" style="width: 50%;" name="email">
+        </div>
+        <div>
+            <label>Address</label>
+            <input required class="form-control" type="text" style="width: 50%;" name="address">
+        </div>
+        <div>
+            <label>Age</label>
+            <input required class="form-control" type="text" style="width: 50%;" name="age">
+        </div>
+        <div>
+            <label>Classroom</label>
+            <select name="classroom" class="form-control" type="text" style="width: 50%;">
+                {% for classroom in classrooms %}
+                {% if classroom.id == student.classroom.id %}
+
+                <option selected value={{classroom.id}}>{{classroom.name}}</option>
+                {% else %}
+                <option value="{{classroom.id}}">{{classroom.name}}</option>
+                {% endif %}
+
+                {% endfor %}
+                </select>
+        </div>
+
+        <button class="btn btn-primary" type="submit" >Submit</button>
+    </form>
+</div>
+{% endblock %}
